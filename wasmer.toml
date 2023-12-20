@@ -1,0 +1,18 @@
+[package]
+name = "wasmer/python-worker-wasmer-starter"
+version = "0.1.0"
+description = "wasmer/python-worker-wasmer-starter py worker"
+
+[dependencies]
+"wasmer/python" = "^3.12.6"
+
+[fs]
+"/src" = "./src"
+
+[[command]]
+name = "script"
+module = "wasmer/python:python"
+runner = "wasi"
+
+[command.annotations.wasi]
+main-args = ["/src/main.py"]
