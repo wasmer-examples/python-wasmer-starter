@@ -1,37 +1,38 @@
-# python-worker-wasmer-starter
-
-Python worker template for Wasmer Edge. This is a template project for creating a Python worker that can be deployed to Wasmer Edge.
+This is a simple [Python](https://python.org/) HTTP server.
 
 ## Usage
 
-### 1. Install the `wasmer` CLI
+Modify the logic of your simple Python HTTP server in the `src/main.py` file.
+
+You can run the server with Python with:
 
 ```bash
-curl https://get.wasmer.io -sSfL | sh
+$ python src/main.py
 ```
 
-### 2. Clone this repository
+or you can also use `wasmer run` to run things locally.
 
 ```bash
-git clone https://github.com/wasmer-examples/python-worker-wasmer-starter.git
+$ wasmer run . --net --env PORT=8080
 ```
 
-### 3. Add your Python worker
+> [!NOTE]
+> You will need to have Wasmer installed (check out [the docs to install the Wasmer CLI](https://docs.wasmer.io/install)!). 
+> The `--net` flag is required to enable networking support in Wasmer.
 
-Add your Python worker to the `src/main.py` file.
+You will see the output from the Python application in the console. The above command will run the Python worker locally on port `8080`.
 
-### 4. Run the Python worker
+## Deploy on Wasmer Edge
 
-```bash
-wasmer run . --net --env PORT=8080
-```
+The easiest way to deploy your Python app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
 
-You will get the output from the Python worker. The above command will run the Python worker locally on port 8080.
+Live example: http://python-worker-wasmer-starter-worker.wasmer.app/
 
-### 5. Deploy the Python worker
+Run this commmand to deploy to Wasmer Edge:
 
 ```bash
 wasmer deploy
 ```
 
+> [!NOTE]
 > You will need to change the namespace in `wasmer.toml` to your own namespace and app name in `app.yaml` to your own app name.
