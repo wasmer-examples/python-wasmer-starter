@@ -1,7 +1,9 @@
 [package]
-name = "wasmer/python-worker-wasmer-starter"
-version = "0.1.0"
-description = "wasmer/python-worker-wasmer-starter py worker"
+name = "wasmer-examples/python-wasmer-starter"
+version = "0.2.1"
+description = "Python HTTP Server Wasmer starter package"
+readme = "README.md"
+repository = "https://github.com/wasmerio/python-wasmer-starter"
 
 [dependencies]
 "wasmer/python" = "^3.12.6"

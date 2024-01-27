@@ -1,7 +1,4 @@
 ---
 kind: wasmer.io/App.v0
 name: python-worker-wasmer-starter-worker
-app_id: da_J2l9IzteUMjK
-package: wasmer/python-worker-wasmer-starter
-cli_args:
-  - /src/main.py
+package: wasmer-examples/python-wasmer-starter

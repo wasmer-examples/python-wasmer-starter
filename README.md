@@ -10,23 +10,22 @@ You can run the server with Python with:
 $ python src/main.py
 ```
 
-or you can also use `wasmer run` to run things locally.
+Or you can also use `wasmer run` to run it locally (check out the [Wasmer install guide](https://docs.wasmer.io/install)):
 
 ```bash
 $ wasmer run . --net --env PORT=8080
 ```
 
-> [!NOTE]
-> You will need to have Wasmer installed (check out [the docs to install the Wasmer CLI](https://docs.wasmer.io/install)!). 
-> The `--net` flag is required to enable networking support in Wasmer.
+> [!TIP]
+> You can also run `wasmer run wasmer-examples/python-wasmer-starter --net --env PORT=8080`to run the remote package
 
-You will see the output from the Python application in the console. The above command will run the Python worker locally on port `8080`.
+Open [http://localhost:8080](http://localhost:8080) with your browser to see the Python application response.
 
 ## Deploy on Wasmer Edge
 
 The easiest way to deploy your Python app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
 
-Live example: http://python-worker-wasmer-starter-worker.wasmer.app/
+Live example: https://python-worker-wasmer-starter-worker.wasmer.app/
 
 Run this commmand to deploy to Wasmer Edge:
 
