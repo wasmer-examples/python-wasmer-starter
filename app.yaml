@@ -1,4 +1,3 @@
 ---
 kind: wasmer.io/App.v0
-name: python-worker-wasmer-starter-worker
-package: wasmer-examples/python-wasmer-starter
+package: .
