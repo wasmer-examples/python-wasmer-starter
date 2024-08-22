@@ -13,7 +13,7 @@ $ python src/main.py
 Or you can also use `wasmer run` to run it locally (check out the [Wasmer install guide](https://docs.wasmer.io/install)):
 
 ```bash
-$ wasmer run . --net --env PORT=8080
+$ wasmer run . --env PORT=8080
 ```
 
 Open [http://localhost:8080](http://localhost:8080) with your browser to see the Python application response.
