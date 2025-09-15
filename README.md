@@ -1,4 +1,4 @@
-This is a simple [Python](https://python.org/) HTTP server.
+This is a simple [Python](https://python.org/) HTTP server running with no dependencies.
 
 ## Usage
 
